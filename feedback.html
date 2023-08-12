@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback-form</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- main css file -->
+    <link rel="stylesheet" href="static/css/feedback/feddback.css">
+    <link rel="stylesheet" href="static/css/home/home.css">
+    <link rel="stylesheet" href="static/css/navbar/navbar.css">
+    <link rel="stylesheet" href="static/css/footer/footer.css">
+</head>
+
+<body>
+
+    <!-- loading
+    <?php // include("loading.php"); ?> -->
+
+
+<!-- Start nav -->
+                <!-- Start top nav -->
+                <div class="top-nav">
+                    <!-- Start left -->
+                    <div class="left">
+                        <div class="wish">
+                            wishlist
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <div class="help" id="help_div">
+                            <p>need help ?</p>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-phone"></i>
+                                        0000-00-00
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-phone"></i>
+                                        6865-58-32
+                                    </li>
+                                    <li>
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                        9854-265-35
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End left -->
+
+                    <!-- Start right -->
+                    <div class="right">
+                        call 24/7 . 654-8435-984
+                        <form action="logout.php" method="post">
+                            <button type="submit" name="logout" value="log-out">log-out</button>
+                        </form>
+                    </div>
+                    <!-- End right -->
+
+                    <!-- logout  -->
+
+                    <!-- logout  -->
+                </div>
+                <!-- End top nav -->
+                <nav>
+                    <!-- Start logo -->
+                    <div class="logo">
+                        <img src="https://capricathemes.com/wordpress/WCM04/WCM040086/wp-content/themes/gamehoak/images/codezeel/logo.png" alt="logo">
+                    </div>
+                    <!-- End logo -->
+
+                    <!-- Start links -->
+                    <div id="links_div" class="links">
+                        <i class="fa-solid fa-xmark close_icon"></i>
+
+                        <ul>
+                            <li><a href="home.html" target="_blank">home</a></li>
+                            <li><a href="home.html#store">store</a></li>
+                            <li><a href="aboutus.html" target="_blank">about</a></li>
+                            <li><a href="contactus.html" target="_blank">contact</a></li>
+                            <li><a href="feedback.html" target="_blank">feedback</a></li>
+                        </ul>
+
+                        <div class="search_box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder="search">
+                        </div>
+                    </div>
+                    <!-- End links -->
+
+                    <!-- Start right -->
+                    <div class="right-side">
+
+                        <div class="search">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            <input type="text" placeholder="Search" class="search_input">
+                        </div>
+
+                        <div class="login">
+                            <a href="contactus.html">
+                                <i class="fa-solid fa-user"></i>
+                                login
+                            </a>
+                        </div>
+
+                        <div class="cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <span class="pro-number">0</span>
+                            <span class="total">0.00</span>
+                        </div>
+
+                        <i class="fa-solid fa-bars menu_icon"></i>
+                    </div>
+                    <!-- End right -->
+                </nav>
+            <!-- End nav -->
+
+    <div class="container-from">
+        <form method="post" class="feed-form">
+
+            <h1>Feedback</h1>
+
+            <div class="form-box">
+                <input type="text" class="form-input" name="username" placeholder="UserName" 
+                required>
+            </div>
+
+            <div class="form-box">
+                <input type="email" class="form-input" name="email" placeholder="Email" 
+                required>
+            </div>
+
+            <div class="form-box">
+                <textarea name="feedback" placeholder="Your Feedback">
+                </textarea>
+            </div>
+
+            <button type="submit" name="send">
+                <div class="svg-wrapper-1">
+                    <div class="svg-wrapper">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                </div>
+                <span>Send</span>
+            </button>
+        </form>
+    </div>
+
+
+            <!-- Start footer -->
+            <footer class="text-center text-white">
+                <!-- Grid container -->
+                <div class="container p-4">
+                    <!-- Section: Social media -->
+                    <section class="mb-4">
+
+                        <!-- Linkedin -->
+                        <a class="btn btn-outline-light btn-floating m-2" href="https://www.linkedin.com/in/mohamed-mahmoud90/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <!-- Github -->
+                        <a class="btn btn-outline-light btn-floating m-2" href="https://github.com/Mohamed-Leo" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <!-- codepen -->
+                        <a class="btn btn-outline-light btn-floating m-2" href="https://codepen.io/Shadowing-213123" target="_blank">
+                            <i class="fa-brands fa-codepen"></i>
+                        </a>
+                    </section>
+                    <!-- Section: Social media -->
+
+                    <!-- Section: Form -->
+                    <section class="form-sec">
+                        <form action="">
+                            <!--Grid row-->
+                            <div class="row d-flex justify-content-center">
+                                <!--Grid column-->
+                                <div class="col-auto">
+                                    <p class="pt-2">
+                                        <strong>Sign up for our newsletter</strong>
+                                    </p>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-5 col-12">
+                                    <!-- Email input -->
+                                    <div class="form-outline form-white mb-4">
+                                        <input type="email" id="form5Example21" class="form-control" />
+                                        <label class="form-label" for="form5Example21">Email address</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-auto">
+                                    <!-- Submit button -->
+                                    <button type="button" class="btn btn-outline-light mb-4">
+                                        Subscribe
+                                    </button>
+                                </div>
+                                <!--Grid column-->
+                            </div>
+                            <!--Grid row-->
+                        </form>
+                    </section>
+                    <!-- Section: Form -->
+
+                    <!-- Section: Text -->
+                    <section class="mb-4 about-text">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                            repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                            eum harum corrupti dicta, aliquam sequi voluptate quas.
+                        </p>
+                    </section>
+                    <!-- Section: Text -->
+
+                    <!-- Section: Links -->
+                    <section class="links-sec">
+                        <!--Grid row-->
+                        <div class="row flex-box">
+                            <!--Grid column-->
+                            <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                                <h5 class="text-uppercase">Address Info</h5>
+
+                                <ul class="links-ul list-unstyled mb-0">
+                                    <li>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        60 29th Street San Francisco, CA 94110 507-Union Trade Center,
+                                        United States of America
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-phone"></i>
+                                        (+00) 123-456-789
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <a href="mailto:mohamed.mahmoud.232424@gmail.com">
+                                            mohamed.mahmoud.232424@gmail.com
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                <h5 class="text-uppercase">Information</h5>
+
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="#" class="text-white">Bookmark</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-white">Featuers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-white">Sitemap</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-white">Contact us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                <h5 class="text-uppercase">Extras</h5>
+
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="#" class="text-white">Delivary</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-white">Cart</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-white">My account</a>
+                                    </li>
+                                    <li>
+                                        <a href="aboutus.php" class="text-white" target="_blank">About us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                    </section>
+                    <!-- Section: Links -->
+                </div>
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2023 Copyright:
+                    <a href="">Mohamed-Leo</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+            <!-- End footer -->
+
+    <!-- jquery file -->
+    <script src="static/js/jquery-3.6.4.min.js"></script>
+    <!-- main js file -->
+    <script src="static/js/home.js"></script>
+    <script>
+        $(document).ready(() => {
+            $(".loading").fadeOut(1500);
+        });
+    </script>
+</body>
+
+</html>
+
+<?php ob_end_flush(); ?>
