@@ -26,9 +26,6 @@
 
 <body>
 
-    <!-- loading -->
-    <?php include("loading.php"); ?>
-
     <!-- Start nav -->
     <!-- Start top nav -->
     <div class="top-nav">
@@ -202,7 +199,6 @@
                             <ion-icon name="mail"></ion-icon>
                         </span>
                         <input id="email" type="email" name="email" required>
-                        <?php if(empty($mailerr)){} else{echo $mailerr;} ?>
                         <label for="email">Email</label>
                     </div>
 
@@ -634,7 +630,7 @@
                                 <a href="#" class="text-white">My account</a>
                             </li>
                             <li>
-                                <a href="aboutus.php" class="text-white" target="_blank">About us</a>
+                                <a href="aboutus.html" class="text-white" target="_blank">About us</a>
                             </li>
                         </ul>
                     </div>
